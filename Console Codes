@@ -1,0 +1,16 @@
+int[] numbers = { 23, 56, 78, 45, 87, 34, 26, 567, 345,3513 };
+
+            int[] numbersreverse=new int[10];
+
+            int  counter=numbers.Length-1;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                numbersreverse[i] = numbers[numbers.Length-i-1];
+                counter--;
+            }
+            for (int i = 0; i < numbersreverse.Length; i++)
+            {
+                Console.WriteLine(numbersreverse[i]);
+            }
+            Console.ReadKey();
